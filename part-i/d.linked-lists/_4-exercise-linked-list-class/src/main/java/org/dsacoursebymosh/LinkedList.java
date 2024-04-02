@@ -6,7 +6,7 @@ public class LinkedList {
     private Node[] lists;
     private Node[] newLists;
     private int count;
-    
+
     public LinkedList() {
         lists = new Node[1];
     }
@@ -82,9 +82,7 @@ public class LinkedList {
             last = lists[count - 2];
             last.setNext(null);
             lists[count - 1] = null;
-
         }
-
         --count;
     }
 
