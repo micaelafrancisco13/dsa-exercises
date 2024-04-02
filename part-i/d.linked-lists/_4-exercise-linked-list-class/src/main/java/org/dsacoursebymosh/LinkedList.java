@@ -2,16 +2,14 @@ package org.dsacoursebymosh;
 
 public class LinkedList {
     private Node first;
-
     private Node last;
-
-    public LinkedList() {
-        lists = new Node[1];
-    }
-
     private Node[] lists;
     private Node[] newLists;
     private int count;
+    
+    public LinkedList() {
+        lists = new Node[1];
+    }
 
     // addFirst
     public void addFirst(int data) {
