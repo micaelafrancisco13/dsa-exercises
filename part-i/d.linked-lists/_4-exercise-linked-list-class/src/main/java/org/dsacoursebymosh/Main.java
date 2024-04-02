@@ -8,8 +8,12 @@ public class Main {
         list.addLast(20);
         list.addLast(30);
         list.addFirst(13);
-        list.addFirst(12);
         list.addLast(40);
+        list.addFirst(12);
+        list.addLast(41);
+
+        list.removeFirst();
+        list.removeLast();
 
         list.print();
     }

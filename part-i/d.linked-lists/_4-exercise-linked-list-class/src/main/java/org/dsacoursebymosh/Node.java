@@ -18,6 +18,10 @@ public class Node {
         this.next = next;
     }
 
+    public Node getNext() {
+        return next;
+    }
+
     @Override
     public String toString() {
         return "Node{" +
