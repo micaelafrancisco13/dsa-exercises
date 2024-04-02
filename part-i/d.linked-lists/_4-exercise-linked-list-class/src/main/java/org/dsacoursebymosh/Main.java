@@ -15,6 +15,11 @@ public class Main {
         list.removeLast();
         list.addFirst(9);
 
+        var contains = list.contains(213);
+        var indexOf = list.indexOf(41);
+        System.out.println(contains);
+        System.out.println(indexOf);
+        System.out.println("-----");
         list.print();
     }
 }

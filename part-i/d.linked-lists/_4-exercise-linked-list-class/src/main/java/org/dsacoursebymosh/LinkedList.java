@@ -86,14 +86,21 @@ public class LinkedList {
         --count;
     }
 
-    public Node getFirst() {
-        return first;
-    }
-
-    public Node getLast() {
-        return last;
-    }
-
     // contains
+    public boolean contains(int data) {
+        for (int i = 0; i < count; ++i)
+            if (lists[i].getValue() == data)
+                return true;
+
+        return false;
+    }
+
     // indexOf
+    public int indexOf(int data) {
+        for (int i = 0; i < count; ++i)
+            if (lists[i].getValue() == data)
+                return i;
+
+        return -1;
+    }
 }
