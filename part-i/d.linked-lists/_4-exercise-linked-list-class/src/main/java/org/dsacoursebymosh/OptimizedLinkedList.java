@@ -110,4 +110,30 @@ public class OptimizedLinkedList {
         }
         return array;
     }
+
+    public void reverse() {
+        Node newLast = last;
+        Node newFirst = first;
+
+        Node current;
+        Node previous;
+        Node originalNext;
+
+        current = previous = first;
+
+        while (current != null) {
+            originalNext = current.next;
+            if (current == first) {
+                newLast = first;
+                newLast.next = null;
+            }
+            else current.next = previous;
+            if (current == last) newFirst = current;
+            previous = current;
+            current = originalNext;
+        }
+
+        first = newFirst;
+        last = newLast;
+    }
 }

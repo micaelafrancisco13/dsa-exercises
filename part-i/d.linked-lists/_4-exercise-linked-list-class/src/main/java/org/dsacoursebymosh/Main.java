@@ -22,6 +22,8 @@ public class Main {
         System.out.println(contains);
         System.out.println(indexOf);
         System.out.println("-----");
-        System.out.println(Arrays.toString(list.toArray()));
+        System.out.println("Original: " + Arrays.toString(list.toArray()) + '\n');
+        list.reverse();
+        System.out.println("Reversed: " + Arrays.toString(list.toArray()));
     }
 }
