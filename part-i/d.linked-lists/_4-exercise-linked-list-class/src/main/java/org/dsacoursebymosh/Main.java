@@ -1,8 +1,10 @@
 package org.dsacoursebymosh;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-        LinkedList list = new LinkedList();
+        var list = new OptimizedLinkedList();
 
         list.addLast(10);
         list.addLast(20);
@@ -20,6 +22,6 @@ public class Main {
         System.out.println(contains);
         System.out.println(indexOf);
         System.out.println("-----");
-        list.print();
+        System.out.println(Arrays.toString(list.toArray()));
     }
 }
