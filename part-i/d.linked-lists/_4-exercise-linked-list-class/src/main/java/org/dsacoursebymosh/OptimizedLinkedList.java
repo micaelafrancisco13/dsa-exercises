@@ -112,28 +112,21 @@ public class OptimizedLinkedList {
     }
 
     public void reverse() {
-        Node newLast = last;
-        Node newFirst = first;
+        if (isEmpty()) return;
 
-        Node current;
-        Node previous;
-        Node originalNext;
-
-        current = previous = first;
-
+        var originalLast = last;
+        var current = first;
+        var previous = first;
         while (current != null) {
-            originalNext = current.next;
+            var originalNext = current.next;
             if (current == first) {
-                newLast = first;
-                newLast.next = null;
+                last = first;
+                last.next = null;
             }
             else current.next = previous;
-            if (current == last) newFirst = current;
+            if (current == originalLast) first = current;
             previous = current;
             current = originalNext;
         }
-
-        first = newFirst;
-        last = newLast;
     }
 }

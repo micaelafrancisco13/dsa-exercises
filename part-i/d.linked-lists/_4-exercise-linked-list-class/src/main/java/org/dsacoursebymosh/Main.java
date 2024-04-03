@@ -16,6 +16,7 @@ public class Main {
         list.removeFirst();
         list.removeLast();
         list.addFirst(9);
+        list.addLast(42);
 
         var contains = list.contains(213);
         var indexOf = list.indexOf(41);
