@@ -26,5 +26,6 @@ public class Main {
         System.out.println("Original: " + Arrays.toString(list.toArray()) + '\n');
         list.reverse();
         System.out.println("Reversed: " + Arrays.toString(list.toArray()));
+        System.out.println("Size: " + list.size());
     }
 }
