@@ -140,6 +140,8 @@ public class OptimizedLinkedList {
 
         if (position == size)
             return first;
+        if (position == 1)
+            return last;
 
         var current = first;
         while (current != null) {
