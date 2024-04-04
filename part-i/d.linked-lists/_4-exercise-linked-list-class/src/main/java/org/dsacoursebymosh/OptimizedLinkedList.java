@@ -10,6 +10,10 @@ public class OptimizedLinkedList {
         public Node(int value) {
             this.value = value;
         }
+
+        public int getValue() {
+            return value;
+        }
     }
 
     private Node first;
@@ -128,5 +132,50 @@ public class OptimizedLinkedList {
             previous = current;
             current = originalNext;
         }
+    }
+
+    public Node getKthNodeFromTheEnd(int position) {
+        // position = 2
+        // [ 10, 20, 30, 40, 50 ]
+        //   *   *
+        //       *    *
+        //            *   *
+        //                *   *
+
+        // position = 3
+        // [ 10, 20, 30, 40, 50 ]
+        //   *        *
+        //        *       *
+        //            *       *
+
+        // position = 4
+        // [ 10, 20, 30, 40, 50 ]
+        //   *            *
+        //        *           *
+
+        // position = 5
+        // [ 10, 20, 30, 40, 50 ]
+        //   *                *
+
+        // position = 4
+        // [ 10, 20, 30, 40 ]
+        //
+
+        if (position > size())
+            throw new IllegalArgumentException("Position is greater than the linked list's size");
+
+        if (position == size)
+            return first;
+
+        var current = first;
+        while (current != null) {
+            var end = current;
+            for (int i = 1; i <= position - 1; ++i)
+                end = end.next;
+            if (end == last) break;
+            current = current.next;
+        }
+
+        return current;
     }
 }

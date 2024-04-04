@@ -20,12 +20,14 @@ public class Main {
 
         var contains = list.contains(213);
         var indexOf = list.indexOf(41);
-        System.out.println(contains);
-        System.out.println(indexOf);
-        System.out.println("-----");
+        System.out.println("Contains: " + contains);
+        System.out.println("Index of: " + indexOf);
+        System.out.println("---------------------");
         System.out.println("Original: " + Arrays.toString(list.toArray()) + '\n');
         list.reverse();
         System.out.println("Reversed: " + Arrays.toString(list.toArray()));
         System.out.println("Size: " + list.size());
+        System.out.println("Kth node from the end: " +
+                (list.getKthNodeFromTheEnd(2)).getValue());
     }
 }
