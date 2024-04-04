@@ -135,34 +135,8 @@ public class OptimizedLinkedList {
     }
 
     public Node getKthNodeFromTheEnd(int position) {
-        // position = 2
-        // [ 10, 20, 30, 40, 50 ]
-        //   *   *
-        //       *    *
-        //            *   *
-        //                *   *
-
-        // position = 3
-        // [ 10, 20, 30, 40, 50 ]
-        //   *        *
-        //        *       *
-        //            *       *
-
-        // position = 4
-        // [ 10, 20, 30, 40, 50 ]
-        //   *            *
-        //        *           *
-
-        // position = 5
-        // [ 10, 20, 30, 40, 50 ]
-        //   *                *
-
-        // position = 4
-        // [ 10, 20, 30, 40 ]
-        //
-
-        if (position > size())
-            throw new IllegalArgumentException("Position is greater than the linked list's size");
+        if (position > size || position < 1)
+            throw new IllegalArgumentException("Position is invalid");
 
         if (position == size)
             return first;

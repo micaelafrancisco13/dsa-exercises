@@ -28,6 +28,6 @@ public class Main {
         System.out.println("Reversed: " + Arrays.toString(list.toArray()));
         System.out.println("Size: " + list.size());
         System.out.println("Kth node from the end: " +
-                (list.getKthNodeFromTheEnd(2)).getValue());
+                (list.getKthNodeFromTheEnd(0)).getValue());
     }
 }
