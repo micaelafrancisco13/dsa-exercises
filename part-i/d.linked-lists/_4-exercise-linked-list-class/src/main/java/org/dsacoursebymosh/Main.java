@@ -13,7 +13,7 @@ public class Main {
         list.addLast(40);
         list.addFirst(12);
         list.addLast(41);
-        list.removeFirst();
+//        list.removeFirst();
         list.removeLast();
         list.addFirst(9);
         list.addLast(42);
@@ -29,5 +29,9 @@ public class Main {
         System.out.println("Size: " + list.size());
         System.out.println("Kth node from the end: " +
                 (list.getKthNodeFromTheEnd(2)).getValue());
+        var middle1 = list.printMiddle()[0].getValue();
+        var middle2 = list.printMiddle()[1] != null ? list.printMiddle()[1].getValue() : null;
+        var middle = middle2 != null ? middle1 + " " + middle2 : middle1;
+        System.out.println("Print middle: " + middle);
     }
 }

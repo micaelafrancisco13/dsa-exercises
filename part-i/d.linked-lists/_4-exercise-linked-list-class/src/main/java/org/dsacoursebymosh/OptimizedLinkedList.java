@@ -154,4 +154,22 @@ public class OptimizedLinkedList {
 
         return current;
     }
+
+    public Node[] printMiddle() {
+        if (isEmpty()) throw new NoSuchElementException("Linked list is empty");
+
+        var startIndex = 0.0;
+        if (size % 2 == 0) startIndex = (double) size / 2;
+        else startIndex = (((double) size / 2) + 0.5);
+
+        var nodes = new Node[2];
+        var start = first;
+        for (int i = 1; i <= startIndex - 1; ++i)
+            start = start.next;
+        nodes[0] = start;
+        if (size % 2 == 0) nodes[1] = start.next;
+        else nodes[1] = null;
+
+        return nodes;
+    }
 }
