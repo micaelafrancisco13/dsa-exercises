@@ -172,4 +172,17 @@ public class OptimizedLinkedList {
 
         return nodes;
     }
+
+    public boolean checkIfHasLoop() {
+        var slow = first;
+        var fast = first;
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+            if (slow == fast)
+                return true;
+        }
+
+        return false;
+    }
 }

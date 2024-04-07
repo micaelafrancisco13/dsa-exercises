@@ -33,5 +33,6 @@ public class Main {
         var middle2 = list.printMiddle()[1] != null ? list.printMiddle()[1].getValue() : null;
         var middle = middle2 != null ? middle1 + " " + middle2 : middle1;
         System.out.println("Print middle: " + middle);
+        System.out.println("Has loop: " + list.checkIfHasLoop());
     }
 }
