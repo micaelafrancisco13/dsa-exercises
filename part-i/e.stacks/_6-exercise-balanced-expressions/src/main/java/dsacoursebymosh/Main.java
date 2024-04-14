@@ -4,21 +4,34 @@ import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
-        String leftRegex  = "\\[|\\{|\\(|<";
-        String rightRegex = "\\]|\\}|\\)|>";
-        String input = "([1>)";
-        String test = input.replaceAll("[^()\\[\\]{}<>]", "");
-        System.out.println("test " + test);
+        String input = "(([1] + <2>))";
+//        String input = "{{1)}";
+        System.out.println("Is balanced? " + isExpressionBalanced(input));
+    }
 
+    public static boolean isExpressionBalanced(String input) {
         Stack<Character> stack = new Stack<>();
-        var count = 0;
-        for (var ch : test.toCharArray()) {
+        for (var ch : input.toCharArray()) {
             if ((ch == '[' || (ch == '{') || (ch == '(') || (ch == '<'))) {
-                ++count;
+                System.out.println("ch = " + ch);
                 stack.push(ch);
+
+            }
+
+            if ((ch == ']' || (ch == '}') || (ch == ')') || (ch == '>'))) {
+                if (stack.isEmpty())
+                    return false;
+
+                var top = stack.pop();
+                System.out.println("top = " + top);
+                if ((ch == ']' && top != '[') ||
+                        (ch == '}' && top != '{') ||
+                        (ch == ')' && top != '(') ||
+                        (ch == '>' && top != '<'))
+                    return false;
             }
         }
 
-        System.out.println(count);
+        return stack.empty();
     }
 }
