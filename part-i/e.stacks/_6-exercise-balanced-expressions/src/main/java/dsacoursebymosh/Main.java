@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
-        String input = "(([1] + <2>))";
+        String input = "(({1] + <2>))";
 //        String input = "{{1)}";
         System.out.println("Is balanced? " + isExpressionBalanced(input));
     }
@@ -23,7 +23,9 @@ public class Main {
                     return false;
 
                 var top = stack.pop();
+                System.out.println("ch = " + ch);
                 System.out.println("top = " + top);
+                System.out.println(' ');
                 if ((ch == ']' && top != '[') ||
                         (ch == '}' && top != '{') ||
                         (ch == ')' && top != '(') ||
