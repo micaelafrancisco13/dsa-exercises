@@ -5,16 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.example</groupId>
-        <artifactId>part-i</artifactId>
+        <artifactId>e.stacks</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>e.stacks</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>_6-exercise-balanced-expressions</module>
-        <module>_11-exercise-stack-using-array</module>
-    </modules>
+    <artifactId>_11-exercise-stack-using-array</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
