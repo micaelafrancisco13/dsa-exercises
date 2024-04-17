@@ -5,17 +5,15 @@ import java.util.Arrays;
 public class ArrayQueue {
     private int[] items;
     private int count;
-    private final int size;
     private int front;
     private int dequeue;
 
     public ArrayQueue(int size) {
-        this.size = size;
         items = new int[size];
     }
 
     public void enqueue(int number) {
-        if (count == size) throw new IllegalStateException("Queue is full");
+        if (count == items.length) throw new IllegalStateException("Queue is full");
         items[count++] = number;
         if (count == 1) front = number;
     }
@@ -36,7 +34,7 @@ public class ArrayQueue {
     }
 
     public boolean isFull() {
-        return count == size;
+        return count == items.length;
     }
 
     @Override
