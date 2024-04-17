@@ -3,42 +3,39 @@ package org.example;
 import java.util.Arrays;
 
 public class ArrayQueue {
-    private int[] items;
+    private final int[] items;
     private int count;
     private int front;
-    private int dequeue;
+    private int rear;
 
     public ArrayQueue(int size) {
         items = new int[size];
     }
 
     public void enqueue(int number) {
-        if (count == items.length) throw new IllegalStateException("Queue is full");
-        items[count++] = number;
-        if (count == 1) front = number;
+        if (count == items.length)
+            throw new IllegalStateException("Queue is full");
+
+        items[rear++] = number;
+        count++;
     }
 
-    public void dequeue() {
-        if (count == 0) throw new IllegalStateException("Queue is empty");
-        if (count == 1) items = new int[0];
-        else front = items[++dequeue];
+    public int dequeue() {
+        if (count == 0)
+            throw new IllegalStateException("Queue is empty");
+
+        var deletedFront = items[front];
+        items[front++] = 0;
         --count;
+        return deletedFront;
     }
 
     public int peek() {
         return front;
     }
 
-    public boolean isEmpty() {
-        return count == 0;
-    }
-
-    public boolean isFull() {
-        return count == items.length;
-    }
-
     @Override
     public String toString() {
-        return Arrays.toString(Arrays.copyOfRange(items, dequeue, items.length));
+        return Arrays.toString(items);
     }
 }

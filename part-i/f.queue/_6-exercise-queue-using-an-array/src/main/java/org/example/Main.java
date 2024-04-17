@@ -6,13 +6,14 @@ public class Main {
         arrayQueue.enqueue(1);
         arrayQueue.enqueue(2);
         arrayQueue.enqueue(3);
+        System.out.println("dequeue " + arrayQueue.dequeue());
+        System.out.println("dequeue " + arrayQueue.dequeue());
         arrayQueue.enqueue(4);
         arrayQueue.enqueue(5);
-        arrayQueue.dequeue();
-        arrayQueue.dequeue();
+//        arrayQueue.enqueue(6);
         System.out.println(arrayQueue);
-        System.out.println(arrayQueue.peek());
-        System.out.println(arrayQueue.isFull());
-        System.out.println(arrayQueue.isEmpty());
+//        System.out.println(arrayQueue.peek());
+//        System.out.println(arrayQueue.isFull());
+//        System.out.println(arrayQueue.isEmpty());
     }
 }
