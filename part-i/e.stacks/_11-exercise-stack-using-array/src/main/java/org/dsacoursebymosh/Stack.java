@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class Stack {
     private int[] items = new int[1];
     private int count;
+    private int min;
 
     public void push(int number) {
         if (count == items.length) { // or throw new StackoverflowError()
@@ -12,7 +13,12 @@ public class Stack {
             System.arraycopy(items, 0, itemsCopy, 0, items.length);
             items = itemsCopy;
         }
+        // input : 5, 3, 4, 1, 2
+        // min : 5, 3, 1
         items[count++] = number;
+        if (count == 1) min = number;
+        if (number < min)
+            min = number;
     }
 
     public int pop() {
@@ -25,6 +31,10 @@ public class Stack {
     public int peek() {
         if (count == 0) throw new IllegalStateException("Stack is empty");
         return items[count - 1];
+    }
+
+    public int min() {
+        return min;
     }
 
     public boolean isEmpty() {
