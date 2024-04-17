@@ -9,6 +9,8 @@
         <module name="_4-exercise-array-class" />
         <module name="_11-exercise-stack-using-array" />
         <module name="_6-exercise-balanced-expressions" />
+        <module name="_4-exercise-reversing-a-queue" />
+        <module name="_6-exercise-queue-using-an-array" />
         <module name="_4-exercise-linked-list-class" />
       </profile>
     </annotationProcessing>
