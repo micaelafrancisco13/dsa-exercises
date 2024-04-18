@@ -15,7 +15,6 @@ public class Main {
             if ((ch == '[' || (ch == '{') || (ch == '(') || (ch == '<'))) {
                 System.out.println("ch = " + ch);
                 stack.push(ch);
-
             }
 
             if ((ch == ']' || (ch == '}') || (ch == ')') || (ch == '>'))) {
