@@ -31,5 +31,20 @@ public class Main {
         System.out.println(linkedListQueue.peek());
         System.out.println(linkedListQueue.size());
         System.out.println(linkedListQueue.isEmpty());
+
+        System.out.println(' ');
+
+        var stackWithTwoQueues = new StackWithTwoQueues();
+        stackWithTwoQueues.push(13);
+        stackWithTwoQueues.push(12);
+        stackWithTwoQueues.push(14);
+        stackWithTwoQueues.push(11);
+        stackWithTwoQueues.push(15);
+        System.out.println(stackWithTwoQueues.pop());
+        System.out.println(stackWithTwoQueues.pop());
+        System.out.println(stackWithTwoQueues.peek());
+        System.out.println(stackWithTwoQueues.size());
+        System.out.println(stackWithTwoQueues.isEmpty());
+        System.out.println(stackWithTwoQueues);
     }
 }
