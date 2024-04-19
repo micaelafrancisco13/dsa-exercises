@@ -14,7 +14,7 @@
     <modules>
         <module>_4-exercise-reversing-a-queue</module>
         <module>_6-exercise-queue-using-an-array</module>
-        <module>_9-exercise-queue-using-a-stack</module>
+        <module>_9-exercise-queue-using-two-stacks</module>
         <module>_12-exercie-priority-queue-using-an-array</module>
         <module>pdf-exercises</module>
     </modules>
