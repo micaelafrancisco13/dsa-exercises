@@ -5,16 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.example</groupId>
-        <artifactId>part-i</artifactId>
+        <artifactId>g.hash-tables</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>g.hash-tables</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>_4-exercise-find-the-first-non-repeated-character</module>
-        <module>_15-exercise-build-a-hash-table</module>
-    </modules>
+    <artifactId>_15-exercise-build-a-hash-table</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>

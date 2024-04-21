@@ -1,4 +1,4 @@
-package dsacoursebymosh;
+package org.dsacoursebymosh;
 
 import java.util.HashMap;
 import java.util.HashSet;
