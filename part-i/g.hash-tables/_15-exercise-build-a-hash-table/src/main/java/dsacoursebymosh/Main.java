@@ -15,6 +15,8 @@ public class Main {
 //        hashTable.put(entry5);
         System.out.println(hashTable);
         System.out.println(hashTable.remove(3).getValue());
+        var removed = hashTable.remove(5);
+        System.out.println(removed != null ? removed.getValue() : null);
         System.out.println(hashTable);
         hashTable.put(new Entry(4, "new ulysses"));
         System.out.println(hashTable.get(5));
