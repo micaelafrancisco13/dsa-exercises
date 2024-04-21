@@ -35,16 +35,18 @@ public class HashTable {
 
     public String get(int key) {
         var list = getEntries(key);
-        for (var entry : list)
-            if (entry.getKey() == key)
-                return entry.getValue();
+        if (list != null)
+            for (var entry : list)
+                if (entry.getKey() == key)
+                    return entry.getValue();
         return null;
     }
 
     public Entry remove(int key) {
         var existingEntry = checkDuplicateKey(key);
         var list = getEntries(key);
-        list.remove(existingEntry);
+        if (list != null)
+            list.remove(existingEntry);
         return existingEntry;
     }
 

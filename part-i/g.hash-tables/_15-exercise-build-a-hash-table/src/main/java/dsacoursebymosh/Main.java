@@ -12,14 +12,12 @@ public class Main {
         hashTable.put(entry2);
         hashTable.put(entry3);
         hashTable.put(entry4);
-        hashTable.put(entry5);
+//        hashTable.put(entry5);
         System.out.println(hashTable);
         System.out.println(hashTable.remove(3).getValue());
         System.out.println(hashTable);
         hashTable.put(new Entry(4, "new ulysses"));
-        System.out.println(hashTable.get(1));
-        System.out.println(hashTable.get(6));
-        System.out.println(hashTable.get(3));
+        System.out.println(hashTable.get(5));
         System.out.println(hashTable);
     }
 }
