@@ -18,10 +18,11 @@ public class HashTable {
         var position = hash(entry.getKey());
         var linkedList = items.get(position);
         var existingEntry = checkDuplicateKey(entry.getKey());
-        if (existingEntry != null)
-            linkedList.remove(existingEntry);
-        if (linkedList != null)
+        if (linkedList != null) {
+            if (existingEntry != null)
+                linkedList.remove(existingEntry);
             linkedList.push(entry);
+        }
         else {
             newLinkedList.add(entry);
             items.set(position, newLinkedList);
@@ -29,7 +30,7 @@ public class HashTable {
     }
 
     private int hash(int key) {
-        return key % items.size();
+        return Math.abs(key) % items.size();
     }
 
     public String get(int key) {
@@ -37,7 +38,7 @@ public class HashTable {
         for (var entry : list)
             if (entry.getKey() == key)
                 return entry.getValue();
-        return "null";
+        return null;
     }
 
     public Entry remove(int key) {
@@ -70,7 +71,7 @@ public class HashTable {
                 for (var entry : list)
                     entryValues.add(entry.getValue());
             else
-                entryValues.add("null");
+                entryValues.add(null);
             values.add(entryValues);
         }
         return String.valueOf(values);
