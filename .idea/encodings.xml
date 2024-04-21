@@ -23,10 +23,16 @@
     <file url="file://$PROJECT_DIR$/part-i/f.queue/_6-exercise-queue-using-an-array/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/part-i/f.queue/_9-exercise-queue-using-a-stack/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/part-i/f.queue/_9-exercise-queue-using-a-stack/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/part-i/f.queue/_9-exercise-queue-using-two-stacks/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/part-i/f.queue/_9-exercise-queue-using-two-stacks/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/part-i/f.queue/pdf-exercises/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/part-i/f.queue/pdf-exercises/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/part-i/f.queue/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/part-i/f.queue/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/part-i/g.hash-tables/_4-exercise-find-the-first-non-repeated-character/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/part-i/g.hash-tables/_4-exercise-find-the-first-non-repeated-character/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/part-i/g.hash-tables/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/part-i/g.hash-tables/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/part-i/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/part-i/src/main/resources" charset="UTF-8" />
   </component>

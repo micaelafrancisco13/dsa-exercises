@@ -1,4 +1,4 @@
-package org.example;
+package org.dsacoursebymosh;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
