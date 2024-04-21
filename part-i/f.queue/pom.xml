@@ -16,7 +16,7 @@
         <module>_6-exercise-queue-using-an-array</module>
         <module>_9-exercise-queue-using-two-stacks</module>
         <module>_12-exercie-priority-queue-using-an-array</module>
-        <module>pdf-exercises</module>
+        <module>queue-pdf-exercises</module>
     </modules>
 
     <properties>
