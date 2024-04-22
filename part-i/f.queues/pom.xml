@@ -5,11 +5,19 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.example</groupId>
-        <artifactId>f.queue</artifactId>
+        <artifactId>part-i</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>_4-exercise-reversing-a-queue</artifactId>
+    <artifactId>queues</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>_4-exercise-reversing-a-queue</module>
+        <module>_6-exercise-queue-using-an-array</module>
+        <module>_9-exercise-queue-using-two-stacks</module>
+        <module>_12-exercie-priority-queue-using-an-array</module>
+        <module>queue-pdf-exercises</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>

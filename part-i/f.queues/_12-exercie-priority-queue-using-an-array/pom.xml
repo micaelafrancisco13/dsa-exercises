@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.example</groupId>
-        <artifactId>f.queue</artifactId>
+        <artifactId>queues</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>_9-exercise-queue-using-two-stacks</artifactId>
+    <artifactId>_12-exercie-priority-queue-using-an-array</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>

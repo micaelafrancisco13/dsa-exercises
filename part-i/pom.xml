@@ -12,7 +12,7 @@
         <module>c.arrays</module>
         <module>d.linked-lists</module>
         <module>e.stacks</module>
-        <module>f.queue</module>
+        <module>f.queues</module>
         <module>g.hash-tables</module>
     </modules>
 
