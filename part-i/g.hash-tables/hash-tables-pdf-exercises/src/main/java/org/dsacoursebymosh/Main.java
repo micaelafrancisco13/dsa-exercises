@@ -2,7 +2,9 @@ package org.dsacoursebymosh;
 
 public class Main {
     public static void main(String[] args) {
-        int[] array = { 1, 2, 2, 3, 3, 3, 4 };
-        System.out.println("Most frequent " + (HashTableExercises.mostFrequent(array)));
+        int[] array1 = { 1, 2, 2, 3, 3, 3, 4 };
+        int[] array2 = { 1, 7, 5, 9, 2, 12, 3, 11 };
+        System.out.println("Most frequent " + HashTableExercises.mostFrequent(array1));
+        System.out.println("Count pairs with difference " + HashTableExercises.countPairsWithDiff(array2, 4));
     }
 }
