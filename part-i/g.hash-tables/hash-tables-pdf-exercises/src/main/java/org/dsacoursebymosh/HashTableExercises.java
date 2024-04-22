@@ -1,9 +1,6 @@
 package org.dsacoursebymosh;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class HashTableExercises {
     public static int mostFrequent(int[] array) {
@@ -24,15 +21,28 @@ public class HashTableExercises {
     }
 
     public static int countPairsWithDiff(int[] array, int difference) {
-        Set<Integer> set = new HashSet<>();
+        
+    }
+
+    public static int[] twoSum(int[] array, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        int[] indices = { 0, 0 };
+        var index = 0;
         for (var item : array)
-            set.add(item);
+            map.put(index++, item);
 
-        var numberOfPairs = 0;
-        for (var current : set)
-            if (set.contains(current + difference))
-                ++numberOfPairs;
-
-        return numberOfPairs;
+        var entries = map.entrySet();
+        for (var current : entries) {
+            for (var rest : entries) {
+                var currentValue = current.getValue();
+                var nextValue = rest.getValue();
+                if ((!Objects.equals(current.getKey(), rest.getKey())) && (currentValue + nextValue == target)) {
+                    indices[0] = current.getKey();
+                    indices[1] = rest.getKey();
+                    return indices;
+                }
+            }
+        }
+        return indices;
     }
 }

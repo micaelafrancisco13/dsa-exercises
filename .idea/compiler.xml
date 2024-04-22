@@ -21,5 +21,8 @@
         <module name="_4-exercise-find-the-first-non-repeated-character" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="f.queues" target="21" />
+    </bytecodeTargetLevel>
   </component>
 </project>
