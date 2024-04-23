@@ -5,16 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.example</groupId>
-        <artifactId>part-i</artifactId>
+        <artifactId>e.stacks</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>e.stacks</artifactId>
+    <artifactId>stacks-leetcode</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>_6-exercise-balanced-expressions</module>
-        <module>_11-exercise-stack-using-array</module>
-        <module>stacks-leetcode</module>
+        <module>valid-parentheses</module>
     </modules>
 
     <properties>

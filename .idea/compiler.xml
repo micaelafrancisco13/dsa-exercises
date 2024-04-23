@@ -15,6 +15,7 @@
         <module name="_11-exercise-stack-using-array" />
         <module name="queues-pdf-exercises" />
         <module name="hash-tables-pdf-exercises" />
+        <module name="valid-parentheses" />
         <module name="_4-exercise-array-class" />
         <module name="_6-exercise-queue-using-an-array" />
         <module name="_15-exercise-build-a-hash-table" />
@@ -22,7 +23,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="f.queue" target="21" />
       <module name="f.queues" target="21" />
+      <module name="pdf-exercises" target="21" />
     </bytecodeTargetLevel>
   </component>
 </project>
