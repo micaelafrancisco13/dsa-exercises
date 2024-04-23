@@ -20,8 +20,33 @@ public class HashTableExercises {
         return max;
     }
 
-    public static int countPairsWithDiff(int[] array, int difference) {
-        
+    public static int countPairsWithDiff(int[] array, int k) {
+        k = Math.abs(k);
+        Map<Integer, Integer> map = new HashMap<>();
+        var numberOfPairs = 0;
+        if (k == 0) {
+            for (int i = 0; i < array.length; ++i) {
+                for (int j = i + 1; j < array.length; ++j) {
+                    var first = array[i];
+                    var second = array[j];
+                    if (Math.abs(first - second) == k)
+                        if (!map.containsKey(first) && !map.containsKey(second))
+                            map.put(first, second);
+                }
+            }
+            numberOfPairs = map.size();
+        }
+        else {
+            Set<Integer> set = new HashSet<>();
+            for (var item : array)
+                set.add(item);
+
+            for (var current : set)
+                if (set.contains(current + k))
+                    ++numberOfPairs;
+        }
+
+        return numberOfPairs;
     }
 
     public static int[] twoSum(int[] array, int target) {
