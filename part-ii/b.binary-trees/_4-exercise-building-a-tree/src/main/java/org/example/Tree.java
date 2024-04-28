@@ -11,17 +11,20 @@ public class Tree {
             this.leftChild = leftChild;
             this.rightChild = rightChild;
         }
+
+        @Override
+        public String toString() {
+            return "Node = " + value;
+        }
     }
 
     private Node root;
     private int count;
-    private int rows;
 
     public void insert(int value) {
         var node = new Node(value, null, null);
         if (count == 0) {
             root = node;
-            ++rows;
         }
         else {
             var current = root;
@@ -31,14 +34,12 @@ public class Tree {
                     traverse = current.leftChild;
                     if (traverse == null) {
                         current.leftChild = node;
-                        rows = (current.rightChild == null) ? rows + 1 : 0;
                     }
                 }
                 else {
                     traverse = current.rightChild;
                     if (traverse == null) {
                         current.rightChild = node;
-                        rows = (current.leftChild == null) ? rows + 1 : 0;
                     }
                 }
                 current = traverse;
