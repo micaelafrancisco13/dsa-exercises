@@ -21,6 +21,7 @@
         <module name="_6-exercise-queue-using-an-array" />
         <module name="_15-exercise-build-a-hash-table" />
         <module name="_4-exercise-find-the-first-non-repeated-character" />
+        <module name="_10-depth-first-traversals" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
