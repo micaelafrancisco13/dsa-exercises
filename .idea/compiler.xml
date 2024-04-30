@@ -13,6 +13,7 @@
         <module name="_4-exercise-building-a-tree" />
         <module name="_9-exercise-queue-using-a-stack" />
         <module name="_4-exercise-linked-list-class" />
+        <module name="recursion-exercises" />
         <module name="_11-exercise-stack-using-array" />
         <module name="queues-pdf-exercises" />
         <module name="hash-tables-pdf-exercises" />
