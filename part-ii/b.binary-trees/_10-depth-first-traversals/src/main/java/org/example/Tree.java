@@ -122,6 +122,7 @@ public class Tree {
     }
 
     // calculation of the minimum value for a binary search tree
+    // O(log n) - narrowing down roughly half of the items
     public int min() {
         if (root == null)
             throw new IllegalStateException();
@@ -137,6 +138,7 @@ public class Tree {
     }
 
     // calculation of the minimum value for a binary tree
+    // O(n)
     private int min(Node root) {
         if (isLeaf(root))
             return root.value;
