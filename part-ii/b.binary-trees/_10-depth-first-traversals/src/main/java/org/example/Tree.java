@@ -121,6 +121,32 @@ public class Tree {
         return 1 + Math.max(height(root.leftChild), height(root.rightChild));
     }
 
+    // calculation of the minimum value for a binary search tree
+    public int min() {
+        if (root == null)
+            throw new IllegalStateException();
+
+        var current = root;
+        var last = current;
+        while (current != null) {
+            last = current;
+            current = current.leftChild;
+        }
+
+        return last.value;
+    }
+
+    // calculation of the minimum value for a binary tree
+    private int min(Node root) {
+        if (isLeaf(root))
+            return root.value;
+
+        var left = min(root.leftChild);
+        var right = min(root.rightChild);
+
+        return Math.min(Math.min(left, right), root.value);
+    }
+
     private boolean isLeaf(Node root) {
         return root.leftChild == null && root.rightChild == null;
     }

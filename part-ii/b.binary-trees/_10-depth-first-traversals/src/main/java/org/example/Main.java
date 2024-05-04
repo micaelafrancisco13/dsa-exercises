@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
+        // note that this is a binary search tree
         var tree = new Tree();
         tree.insert(7);
         tree.insert(4);
@@ -18,5 +19,6 @@ public class Main {
         System.out.println("In-order depth " + Arrays.toString(tree.traverseInOrder()));
         System.out.println("Post-order depth " + Arrays.toString(tree.traversePostOrder()));
         System.out.println("Height " + tree.height());
+        System.out.println("Min " + tree.min());
     }
 }
