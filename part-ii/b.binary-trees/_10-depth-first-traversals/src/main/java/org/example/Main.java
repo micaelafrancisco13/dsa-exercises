@@ -17,5 +17,6 @@ public class Main {
         System.out.println("Pre-order depth " + Arrays.toString(tree.traversePreOrder()));
         System.out.println("In-order depth " + Arrays.toString(tree.traverseInOrder()));
         System.out.println("Post-order depth " + Arrays.toString(tree.traversePostOrder()));
+        System.out.println("Height " + tree.height());
     }
 }

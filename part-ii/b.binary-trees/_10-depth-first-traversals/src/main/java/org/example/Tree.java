@@ -109,4 +109,19 @@ public class Tree {
         traversePostOrder(root.rightChild);
         items[index++] = root.value;
     }
+
+    public int height() {
+        return height(root);
+    }
+
+    private int height(Node root) {
+        if (isLeaf(root))
+            return 0;
+
+        return 1 + Math.max(height(root.leftChild), height(root.rightChild));
+    }
+
+    private boolean isLeaf(Node root) {
+        return root.leftChild == null && root.rightChild == null;
+    }
 }
