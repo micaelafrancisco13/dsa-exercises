@@ -5,18 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.example</groupId>
-        <artifactId>part-ii</artifactId>
+        <artifactId>b.binary-trees</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>b.binary-trees</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>_4-exercise-building-a-tree</module>
-        <module>_10-depth-first-traversals</module>
-        <module>_13-exercise-equality-checking</module>
-        <module>_15-exercise-validating-binary-search-trees</module>
-    </modules>
+    <artifactId>_15-exercise-validating-binary-search-trees</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
