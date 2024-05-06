@@ -18,6 +18,7 @@
         <module name="queues-pdf-exercises" />
         <module name="hash-tables-pdf-exercises" />
         <module name="valid-parentheses" />
+        <module name="_13-exercise-equality-checking" />
         <module name="_4-exercise-array-class" />
         <module name="_6-exercise-queue-using-an-array" />
         <module name="_15-exercise-build-a-hash-table" />
