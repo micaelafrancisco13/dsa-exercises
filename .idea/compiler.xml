@@ -12,6 +12,7 @@
         <module name="_12-exercie-priority-queue-using-an-array" />
         <module name="_4-exercise-building-a-tree" />
         <module name="_9-exercise-queue-using-a-stack" />
+        <module name="_19-level-oder-traversal" />
         <module name="_4-exercise-linked-list-class" />
         <module name="recursion-exercises" />
         <module name="_11-exercise-stack-using-array" />
@@ -20,6 +21,7 @@
         <module name="valid-parentheses" />
         <module name="_15-exercise-validating-binary-search-trees" />
         <module name="_13-exercise-equality-checking" />
+        <module name="_17-exercise-nodes-at-k-distance" />
         <module name="_4-exercise-array-class" />
         <module name="_6-exercise-queue-using-an-array" />
         <module name="_15-exercise-build-a-hash-table" />
