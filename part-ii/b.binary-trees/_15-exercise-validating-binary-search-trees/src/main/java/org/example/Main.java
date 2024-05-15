@@ -19,8 +19,5 @@ public class Main {
 
         System.out.println(tree1.isBinarySearchTree());
         System.out.println(tree2.isBinarySearchTree());
-
-        System.out.println(tree1.findNodesAtGivenDistance(2));
-        System.out.println(tree2.findNodesAtGivenDistance(1));
     }
 }
