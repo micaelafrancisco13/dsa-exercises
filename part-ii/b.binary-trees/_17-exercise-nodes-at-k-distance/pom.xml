@@ -7,17 +7,10 @@
         <groupId>org.example</groupId>
         <artifactId>part-ii</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>b.binary-trees</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>_4-exercise-building-a-tree</module>
-        <module>_10-depth-first-traversals</module>
-        <module>_13-exercise-equality-checking</module>
-        <module>_15-exercise-validating-binary-search-trees</module>
-        <module>_17-exercise-nodes-at-k-distance</module>
-    </modules>
+    <artifactId>_17-exercise-nodes-at-k-distance</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
