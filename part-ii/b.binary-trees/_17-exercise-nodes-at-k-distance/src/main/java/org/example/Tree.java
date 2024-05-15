@@ -1,7 +1,9 @@
 package org.example;
 
+import java.util.ArrayList;
+
 public class Tree {
-    private static class Node {
+    public static class Node {
         private final int value;
         private Node leftChild;
         private Node rightChild;
@@ -22,6 +24,7 @@ public class Tree {
     private int count;
     private int[] items;
     private int index;
+    private final ArrayList<Node> nodes = new ArrayList<>();
 
     public void insert(int value) {
         var node = new Node(value, null, null);
@@ -188,5 +191,22 @@ public class Tree {
                         currentRoot.rightChild,
                         (currentRoot.value + 1),
                         endingRange);
+    }
+
+    public ArrayList<Node> findNodesAtGivenDistance(int distance) {
+        findNodesAtGivenDistance(root, distance);
+        return nodes;
+    }
+
+    private void findNodesAtGivenDistance(Node current, int distance) {
+        if (current == null)
+            return;
+
+        if (distance == 0)
+            nodes.add(current);
+        else {
+            findNodesAtGivenDistance(current.leftChild, distance - 1);
+            findNodesAtGivenDistance(current.rightChild, distance - 1);
+        }
     }
 }
