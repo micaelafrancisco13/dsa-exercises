@@ -53,34 +53,6 @@ public class Tree {
         ++count;
     }
 
-    public void insertUsingRecursion(int value) {
-        var node = new Node(value, null, null);
-        if (count == 0) {
-            root = node;
-        } else {
-            var current = root;
-            insertUsingRecursion(current, node);
-        }
-        ++count;
-    }
-
-    private void insertUsingRecursion(Node current, Node newNode) {
-        if (newNode.value < current.value) {
-            // insert as left child
-            if (current.leftChild != null)
-                insertUsingRecursion(current.leftChild, newNode);
-            else current.leftChild = newNode;
-        }
-        else {
-            // insert as right child
-            if (current.rightChild != null)
-                insertUsingRecursion(current.rightChild, newNode);
-            else current.rightChild = newNode;
-        }
-        // where does recursion happen here? the call to itself?
-        // insertUsingRecursion()
-    }
-
     public boolean find(int value) {
         var current = root;
         var present = false;

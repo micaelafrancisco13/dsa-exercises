@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/part-ii/c.avl-trees/_6-exercise-tree-insertion-using-recursion/_6-exercise-tree-insertion-using-recursion.iml" filepath="$PROJECT_DIR$/part-ii/c.avl-trees/_6-exercise-tree-insertion-using-recursion/_6-exercise-tree-insertion-using-recursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part-ii/c.avl-trees/c.avl-trees.iml" filepath="$PROJECT_DIR$/part-ii/c.avl-trees/c.avl-trees.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/data-structures-and-algorithms.iml" filepath="$PROJECT_DIR$/.idea/data-structures-and-algorithms.iml" />
     </modules>
   </component>
