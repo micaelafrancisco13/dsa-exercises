@@ -3,8 +3,13 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
         System.out.println(calculateSumOfArithmeticSeries(4));
-        System.out.println(calculateFibonacciSeries(6));
+        System.out.println(calculateFibonacciSeries(5));
     }
+
+    // 4
+    // 4 + (3)
+    //       (2)
+    //        (1)
 
     public static int calculateSumOfArithmeticSeries(int range) {
         if (range == 1)

@@ -15,6 +15,9 @@ public class CharFinder {
             map.put(ch, count + 1);
         }
 
+        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+            System.out.println(map.get(entry.getKey()));
+        }
         for (var ch : chars)
             if (map.get(ch) == 1)
                 return ch;
