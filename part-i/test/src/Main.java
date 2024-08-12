@@ -1,11 +1,11 @@
 import java.util.Arrays;
-import java.util.HashMap;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println(checkIfPrime(13));
         System.out.println(checkIfPalindrome("kayak"));
         System.out.println(checkIfAnagram("sadder", "dreads"));
+        System.out.println(Arrays.toString(printFibonacciSequence(10)));
     }
 
     private static boolean checkIfPrime(int number) {
@@ -77,5 +77,19 @@ public class Main {
 
         // Compare sorted arrays
         return Arrays.equals(charArray1, charArray2);
+    }
+
+    private static int[] printFibonacciSequence(int length) {
+        var numbers = new int[length];
+        for (int i = 0; i < length; ++i) {
+            if (i == 0 || i == 1)
+                numbers[i] = i;
+            else {
+                var last = numbers[i - 1];
+                var secondToTheLast = numbers[i - 2];
+                numbers[i] = secondToTheLast + last;
+            }
+        }
+        return numbers;
     }
 }
