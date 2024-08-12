@@ -11,7 +11,9 @@ public class Main {
             return 1;
         return range + calculateSumOfArithmeticSeries(range - 1);
     }
-
+    // 3 + 2
+    //     2 + 1
+    //
     // 0 =
     // 0 + 1 = 1 . 1
     // 1 + 1 = 2 . 2
