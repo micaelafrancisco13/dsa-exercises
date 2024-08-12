@@ -1,7 +1,11 @@
+import java.util.Arrays;
+import java.util.HashMap;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println(checkIfPrime(13));
         System.out.println(checkIfPalindrome("kayak"));
+        System.out.println(checkIfAnagram("sadder", "dreads"));
     }
 
     private static boolean checkIfPrime(int number) {
@@ -15,7 +19,6 @@ public class Main {
 
         return true;
     }
-
 
     private static boolean checkIfPalindrome(String string) {
         // 0 1 2 3
@@ -57,5 +60,22 @@ public class Main {
             isPalindrome = true;
         }
         return isPalindrome;
+    }
+
+    private static boolean checkIfAnagram(String str1, String str2) {
+        str1 = str1.replaceAll("\\s", "").toLowerCase();
+        str2 = str2.replaceAll("\\s", "").toLowerCase();
+
+        if (str1.length() != str2.length())
+            return false;
+
+        char[] charArray1 = str1.toCharArray();
+        char[] charArray2 = str2.toCharArray();
+
+        Arrays.sort(charArray1);
+        Arrays.sort(charArray2);
+
+        // Compare sorted arrays
+        return Arrays.equals(charArray1, charArray2);
     }
 }
